@@ -1,0 +1,67 @@
+.login {
+  align-items: center;
+  background: linear-gradient(-45deg, rgba(34, 42, 0, 1) 0%, rgba(64, 1, 225, 1)
+  25%, rgb(2, 161, 235) 50%, rgba(64, 1, 225, 1)
+  75%, rgba(34, 42, 0, 1) 100%);
+  background-color: rgba(0, 0, 0, 0.507);
+  color: rgb(202, 202, 202);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.form-login {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 250px;
+  min-width: 150px;
+  padding: 2em;
+}
+
+.form-login img {
+  margin-bottom: 20px;
+  max-width: 100px;
+}
+
+.form-login input {
+  border: 1px solid rgba(1, 42, 225, 0.3);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+.form-login button {
+  background-color: #003be5;
+  border: none;
+  border-radius: 10px;
+  color: rgb(176, 230, 255);
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+.form-login button:disabled {
+  background-color: rgba(211, 211, 211, 0.664);
+  color: rgba(255, 255, 255, 0.692);
+  font-weight: 300;
+}
+
+.form-login input:focus {
+  outline-color: rgba(1, 42, 225, 0.5);
+}
+
+@media ( min-width : 767px ) {
+
+  .form-login {
+    transform: scale(1.3);
+  }
+}

@@ -1,0 +1,54 @@
+.artist {
+  background: linear-gradient(
+    -45deg,
+    rgba(34, 42, 0, 1) 0%,
+    rgba(64, 1, 225, 1) 25%,
+    rgb(2, 161, 235) 50%,
+    rgba(64, 1, 225, 1) 75%,
+    rgba(34, 42, 0, 1) 100%
+  );
+  background-color: rgba(0, 0, 0, 0.507);
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  padding: 30px 20px 20px 20px;
+  color: rgb(255, 255, 255);
+}
+
+.artist img {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.342);
+  width: 40%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.artist h2 {
+  margin: 0;
+}
+
+.artist p {
+  font-size: 1.5em;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+@media (min-width: 780px) {
+  .album {
+    width: 100%;
+    padding-left: 250px;
+  }
+
+  .artist {
+    align-items: baseline;
+    padding-left: 20%;
+  }
+
+  .artist img {
+    max-width: 250px;
+  }
+}

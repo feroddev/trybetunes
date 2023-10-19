@@ -1,0 +1,15 @@
+.loading {
+  align-items: baseline;
+  background-color: rgba(0, 0, 0, 0.267);
+  display: flex;
+  justify-content: center;
+  padding: 5px 20px 0;
+  width: 100vw;
+}
+
+@media ( min-width : 768px ) {
+
+  .loading {
+    width: 650px;
+  }
+}

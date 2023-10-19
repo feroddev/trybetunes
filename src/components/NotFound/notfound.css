@@ -1,0 +1,48 @@
+.notfound {
+  background: linear-gradient(
+      -45deg,
+      rgba(34, 42, 0, 1) 0%,
+      rgba(64, 1, 225, 1) 25%,
+      rgb(2, 161, 235) 50%,
+      rgba(64, 1, 225, 1) 75%,
+      rgba(34, 42, 0, 1) 100%
+    );
+    background-color: rgba(0, 0, 0, 0.507);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 5%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 5em;
+}
+
+p {
+  margin: 0;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+@media (min-width: 780px) {
+  .notfound {
+    flex-direction: row;
+  }
+
+  .notfound p {
+    max-width: 350px;
+    text-align: start;
+    padding-left: 20px;
+    font-size: 2em;
+  }
+
+  .notfound  h1 {
+    font-size: 8em;
+  }
+
+}

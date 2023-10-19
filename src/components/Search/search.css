@@ -1,0 +1,204 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  overflow-x: hidden
+}
+
+.search-container button {
+  background-color: #153081;
+  border: none;
+  border-radius: 20px;
+  color: rgb(211, 241, 255);
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 40%;
+}
+.search-container button:disabled {
+  background-color: rgba(211, 211, 211, 0.664);
+  color: rgba(255, 255, 255, 0.692);
+}
+
+.search-container input {
+  border: 1px solid rgba(1, 42, 225, 0.3);
+  border-radius: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 40%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.774);
+}
+
+.search-container form {
+  background: linear-gradient(
+    -45deg,
+    rgba(34, 42, 0, 1) 0%,
+    rgba(64, 1, 225, 1) 25%,
+    rgb(2, 161, 235) 50%,
+    rgba(64, 1, 225, 1) 75%,
+    rgba(34, 42, 0, 1) 100%
+  );
+  background-color: rgba(0, 0, 0, 0.507);
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  max-width: fit-content;
+}
+
+.absolute-button {
+  position: absolute;
+  align-self: flex-end;
+}
+
+.preview-album {
+  padding: 0px;
+  margin: 10px;
+  border: 1px solid rgb(223, 223, 223);
+  text-align: center;
+  transition: 0.3s;
+  padding-bottom: 10px;
+}
+
+.preview-album img {
+  width: 100%;
+  border-radius: 0;
+  padding-bottom: 5px;
+}
+
+.preview-album h4 {
+  font-size: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0 15px;
+}
+
+.preview-album p {
+  margin: 0;
+  font-size: 0.9em;
+  color: rgba(121, 121, 121, 0.678);
+  font-weight: 400;
+  padding: 0 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.date {
+  font-size: 0.7em;
+  color: rgba(121, 121, 121, 0.678);
+}
+
+.album-search {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.search-container h3 {
+  color: rgb(34, 34, 34);
+  text-align: center;
+  font-weight: 400;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.results span{
+  font-weight: bold;
+}
+
+@media (min-width: 780px) {
+  .search-container form {
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 250px;
+    z-index: 0;
+  }
+  .search-container button {
+    height: 40px;
+    max-width: 130px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .search-container input {
+    height: 40px;
+    max-width: 300px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .search-container input:focus {
+    outline-color: rgba(1, 42, 225, 0.5);
+  }
+
+  .album-search {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-left: 250px;
+    margin-top: 10px;
+  }
+
+  .name-artist {
+    padding-bottom: 20px;
+  }
+
+  .search-container h3 {
+    margin-top: 40px;
+    margin-left: 250px;
+    font-size: 1.5em;
+  }
+
+  .preview-album {
+    padding: 0;
+    padding-bottom: 10px;
+    border-radius: 0;
+  }
+
+  .preview-album img {
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 5px;
+  }
+
+  .name-album, .name-artist {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 15px;
+  }
+
+  .name-album {
+    padding-top: 5px;
+  }
+
+  .preview-album:hover {
+    scale: 1.07;
+    translate: 0 -7px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+  }
+}
+

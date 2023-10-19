@@ -1,0 +1,33 @@
+.favoriteSongs h2{
+    background: linear-gradient(
+      -45deg,
+      rgba(34, 42, 0, 1) 0%,
+      rgba(64, 1, 225, 1) 25%,
+      rgb(2, 161, 235) 50%,
+      rgba(64, 1, 225, 1) 75%,
+      rgba(34, 42, 0, 1) 100%
+    );
+    background-color: rgba(0, 0, 0, 0.507);
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    padding: 30px 20px 30px 20px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+@media (min-width: 780px) {
+  .favoriteSongs {
+    width: 100%;
+    padding-left: 246px;
+  }
+
+  .favoriteSongs h2 {
+    min-height: 200px;
+    font-size: 2.5em;
+  }
+}
