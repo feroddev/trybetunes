@@ -25,25 +25,25 @@ export default function Header() {
 
   return (
     <header data-testid="header-component" className="header">
-      <img className="logo-trybetunes" src="/src/images/logo.svg" alt="logo" />
+      <img className="logo-trybetunes" src="/logo.svg" alt="logo" />
       <div className="header-components">
         <nav>
           <NavLink data-testid="link-to-search" to="/search">
-            <img src="/src/images/search-svgrepo-com.svg" alt="search" />
+            <img src="/search-svgrepo-com.svg" alt="search" />
             Pesquisar
           </NavLink>
           <NavLink data-testid="link-to-favorites" to="/favorites">
-            <img src="/src/images/favorites-svgrepo-com.svg" alt="favorites" />
+            <img src="/favorites-svgrepo-com.svg" alt="favorites" />
             Favoritas
           </NavLink>
           <NavLink data-testid="link-to-profile" to="/profile">
-            <img src="/src/images/profile-round-1342-svgrepo-com.svg" alt="profile" />
+            <img src="/profile-round-1342-svgrepo-com.svg" alt="profile" />
             Perfil
           </NavLink>
         </nav>
         <div className="profile-name-image">
           <img
-            src={ imageProfile === '' ? 'src/images/user.png' : imageProfile }
+            src={ imageProfile === '' ? '/user.png' : imageProfile }
             alt="profile"
           />
           {loading && <Loading colors="#3f3f3f" />}

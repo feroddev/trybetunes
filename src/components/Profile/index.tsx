@@ -6,7 +6,7 @@ import { UserType } from '../../types';
 import './profile.css';
 import UserContext from '../../context/UserContext';
 
-const imageDefault = '/src/images/user.png';
+const imageDefault = '/user.png';
 
 export default function Profile() {
   const [loading, setLoading] = useState<boolean>(false);

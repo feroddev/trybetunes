@@ -6,7 +6,7 @@ import Loading from '../Loading';
 import './profileEdit.css';
 import UserContext from '../../context/UserContext';
 
-const imageDefault = '/src/images/user.png';
+const imageDefault = '/user.png';
 const initialState = {
   name: '',
   email: '',

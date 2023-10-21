@@ -36,7 +36,7 @@ export default function Login() {
       {loading && <Loading colors="#b9b9b9" />}
       {!loading && (
         <form className="form-login" onSubmit={handleSubmit}>
-          <img src="src/images/logo.svg" alt="logo" />
+          <img src="/logo.svg" alt="logo" />
           <input
             data-testid="login-name-input"
             type="text"

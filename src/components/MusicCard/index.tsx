@@ -51,8 +51,8 @@ export default function MusicCard({
         </audio>
         <label data-testid={ `checkbox-music-${trackId}` }>
           <img
-            src={ checked ? '/src/images/checked_heart.png'
-              : '/src/images/empty_heart.png' }
+            src={ checked ? '/checked_heart.png'
+              : '/empty_heart.png' }
             alt="favorite"
           />
           <input
